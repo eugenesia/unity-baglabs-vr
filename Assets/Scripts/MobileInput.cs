@@ -14,7 +14,7 @@ public class MobileInput : MonoBehaviour {
 			// Get the player and camera objects.
 			GameObject player = GameObject.FindGameObjectWithTag("Player");
 			GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
-			Debug.Log(camera.transform.forward);
+
 			// Change the character's position by moving in the direction that camera is facing.
 			player.transform.position = player.transform.position + camera.transform.forward;
 		}
